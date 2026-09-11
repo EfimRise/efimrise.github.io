@@ -21,3 +21,14 @@ body{cursor:none}.cursor-glow{position:fixed;pointer-events:none;z-index:50;widt
 .contact-links{flex-wrap:wrap}
 @media(max-width:760px){.project-grid{display:grid;grid-template-columns:minmax(0,1fr)}.project .project-info{padding:20px;min-height:100px}.monogram{width:52%}}
 @media(prefers-reduced-motion:reduce){.hero-art:before,.hero-art:after{animation:none}.portfolio-preview img{transition:none}}
+
+/* Public portfolio links */
+.external-works{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 18px}
+.external-works a{display:block}
+.archive-link-disabled,.media-card-disabled{opacity:.62;cursor:pointer}
+.archive-link-disabled small,.media-card-disabled small{display:block;color:var(--muted);font-size:9px;margin-top:6px;letter-spacing:.04em}
+.archive-link-disabled:hover,.media-card-disabled:hover{opacity:.9;border-color:var(--accent)}
+.link-status-note{font-size:11px;line-height:1.6;color:var(--muted);margin:16px 0 0;max-width:800px}
+.media-card-disabled{position:relative}
+.media-card-disabled small{color:var(--accent)}
+@media(max-width:760px){.external-works{grid-template-columns:1fr}}
